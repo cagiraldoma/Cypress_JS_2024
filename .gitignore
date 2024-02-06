@@ -128,3 +128,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#Folders
+node_modules/
+
+# Videos and images
+
+cypress/videos
+cypress/screenshots
+cypress/downloads
