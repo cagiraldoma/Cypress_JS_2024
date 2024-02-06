@@ -4,7 +4,7 @@
   "description": "Cypress_2024",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cagiraldoma/Cypress_JS_2024#readme",
   "devDependencies": {
-    "cypress": "^13.6.3"
+    "cypress": "^13.6.3",
+    "cypress-xpath": "^2.0.1"
   }
 }
