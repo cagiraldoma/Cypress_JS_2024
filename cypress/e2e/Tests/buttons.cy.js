@@ -29,6 +29,6 @@ describe("Buttons page", () => {
     // Click the "Right Click" button
     ButtonsPage.clickRightClickButton();
     // Assert that the right click message is visible
-    ButtonsPage.elements.rightClickMessage().should("be.visible");
+    ButtonsPage.elements.rightClickMessage().should("be.visible").and("contain", "You have done a right click");
   });
 });
