@@ -13,7 +13,7 @@ describe("Buttons page", () => {
     // Click the "Click Me" button
     ButtonsPage.clickClickMeButton();
     // Assert that the dynamic click message is visible
-    ButtonsPage.elements.dynamicClickMessage().should("be.visible");
+    ButtonsPage.elements.dynamicClickMessage().should("be.visible").and("contain", "You have done a dynamic click");
   });
 
   // Test case for the "Double Click" button
@@ -21,7 +21,7 @@ describe("Buttons page", () => {
     // Click the "Double Click" button
     ButtonsPage.clickDoubleClickButton();
     // Assert that the double click message is visible
-    ButtonsPage.elements.doubleClickMessage().should("be.visible");
+    ButtonsPage.elements.doubleClickMessage().should("be.visible").and("contain", "You have done a double click");
   });
 
   // Test case for the "Right Click" button
@@ -29,6 +29,6 @@ describe("Buttons page", () => {
     // Click the "Right Click" button
     ButtonsPage.clickRightClickButton();
     // Assert that the right click message is visible
-    ButtonsPage.elements.rightClickMessage().should("be.visible");
+    ButtonsPage.elements.rightClickMessage().should("be.visible").and("contain", "You have done a right click");
   });
 });
