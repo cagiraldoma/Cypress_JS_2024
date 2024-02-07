@@ -1,0 +1,7 @@
+# Carpeta de dependencias de Cypress
+/node_modules
+
+# Carpetas de resultados de pruebas y otros archivos generados
+/cypress/videos
+/cypress/screenshots
+/cypress/reports
