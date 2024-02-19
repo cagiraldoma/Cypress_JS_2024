@@ -18,5 +18,18 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-import { removeLogs } from "./helper";
-removeLogs();
+
+//Hide logs
+/*Cypress.on("uncaught:exception", () => {
+  return false;
+});
+const app = window.top;
+if (!app.document.head.querySelector("[data-hide-command-log-requests]")) {
+  const style = app.document.createElement("style");
+  style.innerHTML = ".command-name-request, .command-name-xhr { display: none; }";
+  style.setAttribute("data-hide-command-log-requests", "");
+  app.document.head.appendChild(style);
+}*/
+
+// Xpath
+require("cypress-xpath");

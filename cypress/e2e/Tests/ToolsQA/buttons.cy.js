@@ -1,5 +1,5 @@
 // Import the ButtonsPage module
-import ButtonsPage from "../../Pages/ToolsQA/ButtonsPage";
+import ButtonsPage from "../../../Pages/ToolsQA/ButtonsPage";
 
 // Describe block for the Buttons page
 describe("Buttons page", () => {

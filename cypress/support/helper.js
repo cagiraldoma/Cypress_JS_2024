@@ -1,3 +1,4 @@
+/*
 export function removeLogs() {
   Cypress.on("uncaught:exception", () => {
     // returning false here prevents Cypress from
@@ -7,12 +8,10 @@ export function removeLogs() {
 
   const origLog = Cypress.log;
   Cypress.log = function (opts, ...other) {
-    if (
-      opts.displayName === "xhr" ||
-      (opts.displayName === "fetch" && opts.url.startsWith("https://"))
-    ) {
+    if (opts.displayName === "xhr" || (opts.displayName === "fetch" && opts.url.startsWith("https://"))) {
       return;
     }
     return origLog(opts, ...other);
   };
 }
+*/
